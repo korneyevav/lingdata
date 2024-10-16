@@ -13,18 +13,7 @@
 words(.*) на lemma\1\nmorph\1
 Вставляем результат в переменную timecodesetc в коде ниже, стираем лишний \n в конце при необхожимости
 
-Код на python:
-timecodesetc = """""".split('\n')
-
-mystem = """""".split('\n')
-
-toimport = ""
-
-for i in range(0, len(timecodesetc)):
-    toimport += timecodesetc[i] + '\t' + mystem[i] + "\n"
-
-with open("elanimport.txt", "w") as file:
-    file.write(toimport)
+Код в файле lemmatise.py
 
 Запускаем код
 Находим файл elanimport.txt, перекодируем его в UTF-8
